@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f6f6f7;
+  max-width: 1200px;
+  margin: auto;
+}
+.container {
+  display: flex;
+  margin: 20px;
+  border-radius: 15px;
+}
+.container .product-item {
+  margin: 10px;
+}
+#products {
+  width: 2500px;
+  background-color: red;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 20px auto;
+  border-radius: 15px;
+  position: relative;
+}
+
+.product-item {
+  background-color: #fff;
+  width: 320px;
+  margin: 30px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  padding: 15px;
+  display: none;
+}
+.active{
+  display: block;
+}
+.product-item img {
+  width: 150px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.product-item p {
+  color: grey;
+  margin: 10px 0 15px;
+  direction: rtl;
+}
+.product-item #f {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#f :first-child {
+  background-color: #fff;
+  color: black;
+  font-size: 1rem;
+}
+#f :last-child {
+  background-color: red;
+  padding: 10px;
+}
+.product-item #del {
+  font-size: 0.8rem;
+  color: gray;
+}
+.product-item span {
+  display: inline-block;
+  margin-bottom: 0px;
+  background-color: #220efa;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.fa-chevron-left {
+  margin-right: 10px;
+}
+#side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 50px;
+}
+
+#side p {
+  color: #fff;
+  font-size: 1.5rem;
+  height: 35px;
+  line-height: 35px;
+  align-items: center;
+}
+#side #time {
+  margin: 30px;
+}
+
+#side img {
+  width: 200px;
+  height: 150px;
+}
+#side .fa-percent {
+  color: #fff;
+  font-size: 4rem;
+  margin: 40px;
+}
+#button {
+    border: none;
+    color: #fff;
+    background-color: red;
+    font-size: 1.5rem;
+}
+.prev , .next {
+  position: absolute;
+  font-size: 40px;
+  color: black;
+  top: 45%;
+  font-weight: 800;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
